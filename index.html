@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Guru</title>
+</head>
+<style>
+    *{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    nav{
+        margin-top: 20px;
+    }
+    li{
+        list-style-type: none;
+            justify-content: center;
+        display: inline;
+margin-left: 130px;
+font-size: 20px;
+color: rgb(17, 17, 17);
+
+    }
+.logo{
+    margin-left: 100px;
+}  
+.last{
+    margin-right: 200px;
+}
+.logo-txt{
+    font-size: 30px;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+.nav-button{
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    padding: 10px;
+    font-size: 15px;
+}
+li:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.home{
+    color: orangered;
+}
+.user{
+    margin-left: 120px;
+}
+.text{
+    font-size: 30px;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+@media screen and (min-width: 768px){
+    .image{
+        display:none;
+    }
+    .text{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 786px){
+    nav{
+        display:none;
+    }
+}
+.main{
+    display: flex;
+    flex-basis: auto;
+}
+.image-container {
+    position: relative;
+    width: 300px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    margin-top:150px;
+    margin-left: 150px;
+    
+}
+
+.image-container img {
+    position: absolute;
+   
+    object-fit: cover;
+    overflow: hidden;
+    margin-left: -290px;
+}
+
+.image1 {
+    z-index: 1; /* Bring the second image to the top */
+    overflow: hidden;
+}
+
+.image3 {
+    z-index: 2; /* Bring the third image to the top */
+    width: 300px;
+    height: 400px;
+    padding-left: 80px;
+    padding-top: 30px;
+    overflow: hidden;
+    
+}
+.main-head{
+    font-size: 60px;
+    width: 50%;
+    margin-top: 80px;
+    margin-left: 70px;
+}
+.verticle{
+    border-left: 1px solid black;
+    width: 2px;
+    margin-left: 70px;
+          height: 50px;
+          margin-top: 50px;
+}
+.vert-text{
+    font-size: 22px;
+    margin-left: 75px;
+    margin-top: 2px;
+}
+br{
+    margin-left: 75px;
+}
+.mid-txt{
+    margin-top: -63px;
+    margin-left: 10px;
+    color: rgb(30, 30, 30);
+}
+.main-button1{
+    width: 130px;
+    height: 40px;
+    margin-left: 75px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+.main-button2{
+    width: 130px;
+    height: 40px;
+    background-color: white;
+    margin-left: 20px;
+}
+.arrow{
+    margin-left: 400px;
+    margin-top: -15px;
+}
+.Orange{
+    margin-top: -20px;
+}
+.green{
+    margin-top: 450px;
+}
+
+.end{
+    margin-right: 100px;
+}
+.circle1{
+    display:flex;
+    padding-left: 500px;
+    padding-top: 300px;
+}
+.arrow1 {
+    display: none;
+}
+.sm-button{
+display: none;
+}
+.home:hover{
+    color: black;
+}
+@media screen and (max-width: 786px){
+    .main{
+        display: block;
+    }
+    .main-head{
+        font-size: 30px;
+        width: 100%;
+        margin-left: 10px;
+    }
+    .verticle{
+        margin-left: 10px;
+    }
+    .vert-text{
+        margin-left: 10px;
+    }
+    br{
+        margin-left: 10px;
+    }
+    .mid-txt{
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+    .main-button1{
+        margin-top: 220px;
+        overflow: visible;
+        margin-left: 20px;
+        width: 200px;
+    }
+    .main-button2{
+        margin-left: 20px;
+        width: 200px;
+    }
+    .image-container{
+        margin-top: 60px;
+        margin-left: 300px;
+        width: 250px; 
+    height: 300px; 
+    }
+    .lg-button{
+        display: none;
+    }
+    .arrow{
+        display: none;
+    }
+    .arrow1{
+        display: flex;
+        margin-left: 300px;
+    }
+    .circle1{
+        padding-left: 420px;
+        display: inline;
+    }
+    .sm-button{
+        display:inline;
+    }
+}
+.foot{
+    margin-top: 100px;
+    background-color: rgb(20, 20, 55);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-left: 20px;
+    padding-right: -50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.sec1{
+    padding-left: 20px;
+}
+.table{
+    color: white;
+}
+footer h3{
+    color: whitesmoke;
+}
+footer p{
+    color: whitesmoke;
+}
+footer .image1{
+    width:50px;
+    height: 40px;
+    background-color: rgb(0, 191, 255);
+    padding: 5px;
+    border-radius: 10px;
+}
+footer .image1 img{
+    padding-left: 10px;
+}
+footer .image2{
+    width:50px;
+    height: 40px;
+    background-color: rgb(255, 115, 0);
+    padding: 5px;
+    border-radius: 10px;
+}
+footer .image2 img{
+    padding-left: 13px;
+    padding-top: 8px;
+}
+footer .image3{
+    width:50px;
+    height: 40px;
+    background-color: rgb(233, 4, 245);
+    padding: 5px;
+    border-radius: 10px;
+}
+footer .image3 img{
+    padding-left: 10px;
+}
+.sec1,.sec2,.sec3,.sec4{
+    margin-left: 30px;
+    margin-right: 25px;
+}
+@media screen and (max-width: 786px){
+    .foot{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .foot .image1,.foot .image2,.foot .image3{
+       margin-left: 180px;
+    }
+    .foot img{
+        padding-right: 10px;
+    }
+}
+</style>
+<body>
+    <nav>
+        <img class="logo" src="logo.png" alt="logo"><span class="logo-txt">E GURU</span>
+        <li class="home">Home</li>
+        <li>About Us</li>
+        <li>Features</li>
+        <li class="last">How it works</li>
+       <button class="nav-button">Sign Up</button>
+    </nav>
+
+    <!-- mobile device -->
+    <div class="nav-2">
+    <img class="image" src="menu-icon.png" alt="">
+    <img class="logo image" src="logo.png" alt="logo"><span class="logo-txt1 text">E GURU</span>
+    <img class="user image" src="user-profile.png" alt="">
+</div>
+
+<!-- navbar end -->
+
+<!-- main section started  -->
+
+ <div class="main">
+
+<div class="left">
+<h1 class="main-head">STUDY FROM HOME WITH EXPERT</h1>
+<hr class="verticle">
+<div class="mid-txt">
+<span class="vert-text"> A learning System Based on Formalised</span> <p class="vert-text">teaching with the help of resources .</p> 
+</div>
+<div class="main-button">
+    <button class="main-button1 lg-button">Get Started</button>
+    <button class="main-button2 lg-button">Learn More</button>
+</div>
+<img src="curve-arrow.png" class="arrow">
+</div>
+<div class="right">
+    <div class="image-container">
+        <img src="orange-arrow.png" class="Orange">
+        <img src="circle.png" alt="" class="circle1">
+        <img src="main-image-bg.png" alt="Image 1">
+        <img src="main-image-pattern.png" alt="Image 2" class="image2">
+        <img src="green-arrow.png" alt="imag" class="green">
+        <img src="main-image.png" alt="Image 3" class="image3">
+    </div>
+        <div class="main-button">
+            <button class="main-button1 sm-button">Get Started</button>
+            <button class="main-button2 sm-button">Learn More</button>
+        </div>
+        <img src="curve-arrow.png" class="arrow1">
+    
+</div>
+<div class="end"></div>
+    </div>
+<!-- main section ended  -->
+
+
+    <footer>
+        <div class="foot">
+            <div class="sec1">
+                <h1 class="table">WHY WE ARE THE BEST</h1>
+            <p>a learning system based on formalised teaching with the help of ...</p>
+        </div>
+            <div class="sec2">
+                <h1 class="image1"><img src="vector1.png" alt=""></h1>
+            <h3>EXPERT TECHER</h3>
+            <p>a learning system based on formalised teaching with the help of ...</p>
+        </div>
+            <div class="sec3">
+                <h1 class="image2"><img src="vector2.png" alt=""></h1>
+            <h3>ONLINE COURSES</h3>
+            <p>a learning system based on formalised teaching with the help of ...</p>
+        </div>
+            <div class="sec4">
+                <h1 class="image3"><img src="vector3.png" alt=""></h1>
+            <h3>24/7 SUPPORT</h3>
+            <p>a learning system based on formalised teaching with the help of ...</p>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
